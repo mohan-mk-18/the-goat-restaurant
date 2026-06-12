@@ -1,0 +1,86 @@
+/* ═══════════════════════════════════════════════════════════
+   THE GOAT RESTAURANT — ANIMATIONS.CSS  (v2 - fixed)
+   Progressive enhancement: NO opacity:0 by default.
+   Only hides elements after JS adds .js-reveal-ready to <html>
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── DEFAULT: Everything visible (no JS = no problem) ───── */
+.reveal-up,
+.reveal-left,
+.reveal-right {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── After JS init: apply hidden state + transitions ─────── */
+.js-reveal-ready .reveal-up {
+  opacity: 0;
+  transform: translateY(36px);
+  transition:
+    opacity  0.65s cubic-bezier(0.4, 0, 0.2, 1) var(--delay, 0s),
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1) var(--delay, 0s);
+}
+
+.js-reveal-ready .reveal-left {
+  opacity: 0;
+  transform: translateX(-36px);
+  transition:
+    opacity  0.65s cubic-bezier(0.4, 0, 0.2, 1) var(--delay, 0s),
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1) var(--delay, 0s);
+}
+
+.js-reveal-ready .reveal-right {
+  opacity: 0;
+  transform: translateX(36px);
+  transition:
+    opacity  0.65s cubic-bezier(0.4, 0, 0.2, 1) var(--delay, 0s),
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1) var(--delay, 0s);
+}
+
+/* ─── Visible state (added by IntersectionObserver) ────────── */
+.js-reveal-ready .reveal-up.visible,
+.js-reveal-ready .reveal-left.visible,
+.js-reveal-ready .reveal-right.visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
+/* ─── Reduced motion: always show ───────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal-ready .reveal-up,
+  .js-reveal-ready .reveal-left,
+  .js-reveal-ready .reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ─── Stagger delay helpers ──────────────────────────────── */
+/* --delay is set via inline style, picked up by transitions above */
+
+/* ─── Background decorative gradients ────────────────────── */
+.section-today,
+.section-loyalty {
+  position: relative;
+}
+.section-today::before,
+.section-loyalty::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(circle at 15% 30%, rgba(255,107,53,0.05) 0%, transparent 55%),
+    radial-gradient(circle at 85% 70%, rgba(201,168,76,0.05) 0%, transparent 55%);
+}
+.section-today > *, .section-loyalty > * { position: relative; z-index: 1; }
+
+/* ─── Utility: gradient text ─────────────────────────────── */
+.text-gradient {
+  background: linear-gradient(135deg, var(--orange), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

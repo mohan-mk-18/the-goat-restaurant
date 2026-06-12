@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The GOAT Restaurant — Chennai's Finest Dining Experience</title>
+  <meta name="description" content="Michelin-star artistry meets cinematic ambiance at The GOAT Restaurant, Chennai's most prestigious fine dining destination." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 1: LOADING SCREEN                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <span class="loader-g">G</span><span class="loader-o">O</span><span class="loader-a">A</span><span class="loader-t">T</span>
+    </div>
+    <p class="loader-tagline">The Greatest Dining Experience Arriving...</p>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 2: NAVIGATION                              -->
+<!-- ═══════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-the">THE</span>
+      <span class="logo-goat">GOAT</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#reservations">Reservations</a></li>
+      <li><a href="#chef-specials">Chef Specials</a></li>
+      <li><a href="#ambience">Ambience</a></li>
+      <li><a href="#offers">Offers</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="#reservations" class="btn-book">Book Table</a>
+      <a href="#menu" class="btn-order">Order Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#reservations">Reservations</a></li>
+      <li><a href="#chef-specials">Chef Specials</a></li>
+      <li><a href="#ambience">Ambience</a></li>
+      <li><a href="#offers">Offers</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#reservations" class="btn-book">Book Table</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 3: HERO                                    -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=90')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Chennai's Most Prestigious Fine Dining</span>
+    <h1 class="hero-headline">The Greatest Dining<br/>Experience of All Time</h1>
+    <p class="hero-sub">Michelin-star artistry. Cinematic ambiance. GOAT-level excellence.</p>
+    <div class="hero-ctas">
+      <a href="#reservations" class="btn-primary">Book Your Table</a>
+      <a href="#menu" class="btn-ghost">Explore Menu</a>
+    </div>
+  </div>
+  <div class="hero-rating-badge">
+    <div class="rating-stars">★★★★★</div>
+    <div class="rating-score">4.9/5</div>
+    <div class="rating-count">2,500+ Reviews</div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll to discover</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 4: INTRODUCTION                            -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="about" class="section-intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-text reveal-left">
+        <span class="section-eyebrow">Our Story</span>
+        <h2>A Legend Born from<br/>Culinary Passion</h2>
+        <p>The GOAT Restaurant represents the pinnacle of fine dining in Chennai—where Michelin-star artistry meets luxurious ambiance. Founded in 2018 by Chef Arjun Krishnan after two decades of mastering his craft across Paris, Tokyo, and Mumbai, The GOAT was conceived as a singular vision: to create a dining experience so extraordinary that every guest leaves feeling legendary.</p>
+        <p>Our culinary philosophy is rooted in the sacred tension between perfection and passion. We source only the finest ingredients—A5 Wagyu from Japan, Norwegian salmon, 45-day aged prime ribeye—and pair them with rare Indian spices and traditional techniques reimagined for the modern palate. Every dish is a conversation between continents.</p>
+        <p>At The GOAT, we believe a truly great restaurant should stir the soul, not merely feed the body. Our promise to every guest is an experience of such beauty and excellence that you will measure all future meals against it.</p>
+        <div class="intro-values">
+          <div class="value-chip"><span>⭐</span> Michelin-Star Cuisine</div>
+          <div class="value-chip"><span>💎</span> Luxurious Ambiance</div>
+          <div class="value-chip"><span>🏆</span> GOAT-Level Service</div>
+          <div class="value-chip"><span>🎬</span> Cinematic Experience</div>
+        </div>
+      </div>
+      <div class="intro-image reveal-right">
+        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=85" alt="The GOAT Restaurant interior" />
+        <div class="intro-image-badge">
+          <span class="badge-year">Est.</span>
+          <span class="badge-num">2018</span>
+          <span class="badge-label">Chennai</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 5: WHY CHOOSE US                           -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-why">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Why Choose Us</span>
+      <h2>Why The GOAT is Chennai's<br/>Most Prestigious Dining Destination</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal-up" style="--delay:0s">
+        <div class="why-icon">⭐</div>
+        <h3>Michelin-Star Culinary Artistry</h3>
+        <p>Every dish crafted by world-class chefs with Michelin-star precision and French technique fused with Indian soul.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:0.1s">
+        <div class="why-icon">💎</div>
+        <h3>Premium Luxury Ambiance</h3>
+        <p>Cinematic interior design with luxurious materials—hand-carved stone, bespoke lighting, and intimate seating that feels like a film set.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:0.2s">
+        <div class="why-icon">🏆</div>
+        <h3>GOAT-Level Service Excellence</h3>
+        <p>Our staff trained in premium hospitality protocols—every detail anticipated, every need met before you express it.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:0.3s">
+        <div class="why-icon">🌿</div>
+        <h3>Fresh, Premium Ingredients</h3>
+        <p>Farm-to-table sourcing with only the finest ingredients—zero compromise between field and plate, every single service.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:0.4s">
+        <div class="why-icon">🎬</div>
+        <h3>Cinematic Dining Experience</h3>
+        <p>Every meal feels like a scene from a luxury film—the plating, the lighting, the service choreography, all curated to perfection.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:0.5s">
+        <div class="why-icon">🎉</div>
+        <h3>Private Dining &amp; Events</h3>
+        <p>Exclusive private spaces for birthdays, corporate events, and celebrations—tailored to make every occasion unforgettable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 6: AWARDS                                  -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-awards">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Recognition</span>
+      <h2>Awarded Among Chennai's Best</h2>
+    </div>
+    <div class="awards-track-wrap">
+      <div class="awards-track">
+        <div class="award-badge"><span class="award-icon">🏆</span><span class="award-name">Best Fine Dining Chennai 2025</span><span class="award-org">Food Awards India</span></div>
+        <div class="award-badge"><span class="award-icon">⭐</span><span class="award-name">Michelin-Star Quality Certification</span><span class="award-org">2024–2026</span></div>
+        <div class="award-badge"><span class="award-icon">🌟</span><span class="award-name">5-Star Restaurant Rating</span><span class="award-org">TripAdvisor Elite</span></div>
+        <div class="award-badge"><span class="award-icon">🥇</span><span class="award-name">Top 10 Luxury Restaurants India</span><span class="award-org">Luxury Dining Awards 2025</span></div>
+        <div class="award-badge"><span class="award-icon">✨</span><span class="award-name">Best Culinary Experience</span><span class="award-org">Chennai Food Awards 2025</span></div>
+        <div class="award-badge"><span class="award-icon">👑</span><span class="award-name">Chef of the Year Nominee</span><span class="award-org">India Food Forum 2024</span></div>
+        <div class="award-badge"><span class="award-icon">🎖️</span><span class="award-name">Luxury Hospitality Excellence</span><span class="award-org">Tamil Nadu Tourism 2025</span></div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="award-badge"><span class="award-icon">🏆</span><span class="award-name">Best Fine Dining Chennai 2025</span><span class="award-org">Food Awards India</span></div>
+        <div class="award-badge"><span class="award-icon">⭐</span><span class="award-name">Michelin-Star Quality Certification</span><span class="award-org">2024–2026</span></div>
+        <div class="award-badge"><span class="award-icon">🌟</span><span class="award-name">5-Star Restaurant Rating</span><span class="award-org">TripAdvisor Elite</span></div>
+        <div class="award-badge"><span class="award-icon">🥇</span><span class="award-name">Top 10 Luxury Restaurants India</span><span class="award-org">Luxury Dining Awards 2025</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 7: RATINGS                                 -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-ratings">
+  <div class="container">
+    <div class="ratings-hero">
+      <div class="ratings-main reveal-up">
+        <div class="ratings-stars-large" id="animStars">★★★★★</div>
+        <div class="ratings-score-large"><span id="countScore">0.0</span><span class="ratings-max">/5</span></div>
+        <div class="ratings-total"><span id="countReviews">0</span> Verified Reviews</div>
+      </div>
+      <div class="ratings-platforms">
+        <div class="platform-badge reveal-up" style="--delay:0.1s">
+          <i class="fab fa-google platform-icon google"></i>
+          <div>
+            <div class="platform-name">Google</div>
+            <div class="platform-stars">★★★★★</div>
+            <div class="platform-score">4.9 · 1,200 reviews</div>
+          </div>
+        </div>
+        <div class="platform-badge reveal-up" style="--delay:0.2s">
+          <i class="fas fa-compass platform-icon tripadvisor"></i>
+          <div>
+            <div class="platform-name">TripAdvisor</div>
+            <div class="platform-stars">★★★★★</div>
+            <div class="platform-score">5.0 · 850 reviews</div>
+          </div>
+        </div>
+        <div class="platform-badge reveal-up" style="--delay:0.3s">
+          <i class="fas fa-utensils platform-icon zomato"></i>
+          <div>
+            <div class="platform-name">Zomato</div>
+            <div class="platform-stars">★★★★☆</div>
+            <div class="platform-score">4.8 · 497 reviews</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 8: SIGNATURE DISHES                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-signature">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Our Best</span>
+      <h2>Signature Masterpieces</h2>
+      <p class="section-desc">Our most celebrated dishes—crafted to perfection, beloved by legends.</p>
+    </div>
+    <div class="dishes-grid">
+      <div class="dish-card reveal-up" style="--delay:0s">
+        <div class="dish-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=85" alt="GOAT Ribeye Prime" />
+          <div class="dish-badge">Bestseller</div>
+        </div>
+        <div class="dish-info">
+          <h3>GOAT Ribeye Prime</h3>
+          <p>45-day aged ribeye, black truffle compound butter, charcoal-grilled to perfection with bordelaise reduction</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹1,899</span>
+            <button class="btn-add">Add to Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal-up" style="--delay:0.1s">
+        <div class="dish-img-wrap">
+          <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=85" alt="Golden Lobster Thermidor" />
+          <div class="dish-badge gold">Chef's Favourite</div>
+        </div>
+        <div class="dish-info">
+          <h3>Golden Lobster Thermidor</h3>
+          <p>Fresh whole lobster, edible gold flakes, Champagne butter sauce, gratin of Gruyère—a luxury statement on the plate</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹2,499</span>
+            <button class="btn-add">Add to Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal-up" style="--delay:0.2s">
+        <div class="dish-img-wrap">
+          <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=600&q=85" alt="Wagyu Tacos Supreme" />
+        </div>
+        <div class="dish-info">
+          <h3>Wagyu Tacos Supreme</h3>
+          <p>A5 Wagyu beef, microgreens, gold-truffle emulsion sauce, handmade corn tortillas—East meets West</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹1,299</span>
+            <button class="btn-add">Add to Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal-up" style="--delay:0.3s">
+        <div class="dish-img-wrap">
+          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=85" alt="Emperor's Dim Sum" />
+          <div class="dish-badge">New</div>
+        </div>
+        <div class="dish-info">
+          <h3>Emperor's Dim Sum</h3>
+          <p>12-piece premium handcrafted dim sum with royal soy glaze, pickled ginger, and XO chili oil accompaniment</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹899</span>
+            <button class="btn-add">Add to Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal-up" style="--delay:0.4s">
+        <div class="dish-img-wrap">
+          <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=600&q=85" alt="Truffle Mushroom Risotto" />
+        </div>
+        <div class="dish-info">
+          <h3>Truffle Mushroom Risotto</h3>
+          <p>Slow-stirred Carnaroli rice, black truffle shavings, aged parmesan crisp, wild forest mushroom medley</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹1,199</span>
+            <button class="btn-add">Add to Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal-up" style="--delay:0.5s">
+        <div class="dish-img-wrap">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=85" alt="Champagne Salmon Royale" />
+        </div>
+        <div class="dish-info">
+          <h3>Champagne Salmon Royale</h3>
+          <p>Norwegian salmon, Champagne beurre blanc, compressed cucumber, microgreens, salmon caviar crown</p>
+          <div class="dish-footer">
+            <span class="dish-price">₹1,699</span>
+            <button class="btn-add">Add to Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 9: FEATURED MENU CATEGORIES                -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-featured-menu">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Explore</span>
+      <h2>Curated Culinary Excellence</h2>
+    </div>
+    <div class="featured-cats">
+      <div class="feat-cat reveal-up" style="--delay:0s; background-image:url('https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=600&q=80')">
+        <div class="feat-cat-overlay"></div>
+        <div class="feat-cat-text"><h3>Starters &amp; Soups</h3><p>Artisanal beginnings</p></div>
+      </div>
+      <div class="feat-cat reveal-up" style="--delay:0.1s; background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80')">
+        <div class="feat-cat-overlay"></div>
+        <div class="feat-cat-text"><h3>Signature Mains</h3><p>Masterpiece entrées</p></div>
+      </div>
+      <div class="feat-cat reveal-up" style="--delay:0.2s; background-image:url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80')">
+        <div class="feat-cat-overlay"></div>
+        <div class="feat-cat-text"><h3>Chef's Desserts</h3><p>Sweet triumphs</p></div>
+      </div>
+      <div class="feat-cat reveal-up" style="--delay:0.3s; background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80')">
+        <div class="feat-cat-overlay"></div>
+        <div class="feat-cat-text"><h3>Premium Beverages</h3><p>Luxury libations</p></div>
+      </div>
+    </div>
+    <div class="featured-cta">
+      <a href="#menu" class="btn-primary large">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 10: FULL MENU (TABBED)                     -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="menu" class="section-menu">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Full Menu</span>
+      <h2>Complete Culinary Journey</h2>
+    </div>
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-tab="starters">Legends Begin Here</button>
+      <button class="tab-btn" data-tab="soups">Sip of Excellence</button>
+      <button class="tab-btn" data-tab="mains">Masterpiece Mains</button>
+      <button class="tab-btn" data-tab="signature">GOAT Signature</button>
+      <button class="tab-btn" data-tab="chef">Chef's Crown</button>
+      <button class="tab-btn" data-tab="desserts">Sweet Triumphs</button>
+      <button class="tab-btn" data-tab="mocktails">Artisanal Elixirs</button>
+      <button class="tab-btn" data-tab="beverages">Luxury Libations</button>
+      <button class="tab-btn" data-tab="packages">GOAT Packages</button>
+    </div>
+    <div class="menu-content">
+
+      <!-- Starters -->
+      <div class="tab-panel active" id="tab-starters">
+        <div class="menu-items-grid">
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=400&q=80" alt="Spring Rolls" />
+            <div class="menu-item-info"><h4>GOAT Spring Rolls</h4><p>Crispy vegetable rolls, sweet chili glaze, sesame dip</p><div class="menu-item-footer"><span class="price">₹599</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=400&q=80" alt="Truffle Arancini" />
+            <div class="menu-item-info"><h4>Truffle Arancini</h4><p>Italian risotto balls, black truffle, aged parmesan crust</p><div class="menu-item-footer"><span class="price">₹749</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=400&q=80" alt="Lobster Bisque" />
+            <div class="menu-item-info"><h4>Lobster Bisque</h4><p>Fresh lobster, Champagne cream, chives, cognac drizzle</p><div class="menu-item-footer"><span class="price">₹899</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="Wagyu Carpaccio" />
+            <div class="menu-item-info"><h4>Wagyu Beef Carpaccio</h4><p>A5 Wagyu, microgreens, truffle oil, shaved parmesan, capers</p><div class="menu-item-footer"><span class="price">₹1,099</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=400&q=80" alt="Golden Mushroom Tart" />
+            <div class="menu-item-info"><h4>Golden Mushroom Tart</h4><p>Wild mushrooms, edible gold flakes, herb cream, buttery shortcrust</p><div class="menu-item-footer"><span class="price">₹649</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soups -->
+      <div class="tab-panel" id="tab-soups">
+        <div class="menu-items-grid">
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=400&q=80" alt="Bone Broth" />
+            <div class="menu-item-info"><h4>Emperor's Bone Broth</h4><p>24-hour slow-simmered chicken bone, turmeric, edible gold flakes</p><div class="menu-item-footer"><span class="price">₹549</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=400&q=80" alt="Mushroom Veloute" />
+            <div class="menu-item-info"><h4>Golden Mushroom Velouté</h4><p>Black mushroom blend, Champagne cream, black truffle oil drizzle</p><div class="menu-item-footer"><span class="price">₹649</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1605522469906-3fe226b356bc?auto=format&fit=crop&w=400&q=80" alt="Consomme" />
+            <div class="menu-item-info"><h4>Champagne Tomato Consommé</h4><p>Refined heirloom tomato, dry Champagne reduction, fresh basil oil</p><div class="menu-item-footer"><span class="price">₹599</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="tab-panel" id="tab-mains">
+        <div class="menu-items-grid">
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="Wagyu Prime" />
+            <div class="menu-item-info"><h4>Wagyu Prime Ribbon</h4><p>A5 Wagyu, 45-day aged, truffle butter, pomme purée, jus rôti</p><div class="menu-item-footer"><span class="price">₹2,899</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=400&q=80" alt="Lobster Thermidor" />
+            <div class="menu-item-info"><h4>Lobster Thermidor Royale</h4><p>Whole fresh lobster, Champagne butter, edible gold, Gruyère gratin</p><div class="menu-item-footer"><span class="price">₹2,499</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Duck Supreme" />
+            <div class="menu-item-info"><h4>Emperor's Duck Supreme</h4><p>Sous-vide duck breast, cherry glaze, truffle risotto, microgreens</p><div class="menu-item-footer"><span class="price">₹1,899</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80" alt="Champagne Salmon" />
+            <div class="menu-item-info"><h4>Champagne Salmon</h4><p>Norwegian salmon, Champagne beurre blanc, seasonal vegetables, dill oil</p><div class="menu-item-footer"><span class="price">₹1,699</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80" alt="Truffle Chicken Curry" />
+            <div class="menu-item-info"><h4>Truffle Chicken Curry</h4><p>Heritage Indian chicken, black truffle, royal spice blend, saffron rice</p><div class="menu-item-footer"><span class="price">₹1,299</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=400&q=80" alt="Golden Lamb Rasam" />
+            <div class="menu-item-info"><h4>Golden Lamb Rasam</h4><p>Premium slow-braised lamb, traditional rasam base, edible gold flakes</p><div class="menu-item-footer"><span class="price">₹1,499</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signature Collection -->
+      <div class="tab-panel" id="tab-signature">
+        <div class="menu-items-grid">
+          <div class="menu-item featured-item">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="Ribeye Prime" />
+            <div class="menu-item-info"><span class="item-label">GOAT Signature</span><h4>GOAT Ribeye Prime</h4><p>45-day aged ribeye, truffle butter, charcoal smoke, bone marrow jus</p><div class="menu-item-footer"><span class="price">₹1,899</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item featured-item">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=400&q=80" alt="Lobster" />
+            <div class="menu-item-info"><span class="item-label">GOAT Signature</span><h4>Golden Lobster Thermidor</h4><p>Fresh lobster, edible gold flakes, Champagne butter, microherbs</p><div class="menu-item-footer"><span class="price">₹2,499</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item featured-item">
+            <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=400&q=80" alt="Wagyu Tacos" />
+            <div class="menu-item-info"><span class="item-label">GOAT Signature</span><h4>Wagyu Tacos Supreme</h4><p>A5 Wagyu, microgreens, gold-truffle sauce, handmade corn tortillas</p><div class="menu-item-footer"><span class="price">₹1,299</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item featured-item">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=400&q=80" alt="Dim Sum" />
+            <div class="menu-item-info"><span class="item-label">GOAT Signature</span><h4>Emperor's Dim Sum</h4><p>12-piece premium handcrafted dim sum, royal soy glaze, XO oil</p><div class="menu-item-footer"><span class="price">₹899</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item featured-item">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=400&q=80" alt="Truffle Risotto" />
+            <div class="menu-item-info"><span class="item-label">GOAT Signature</span><h4>Truffle Mushroom Risotto</h4><p>Carnaroli rice, black truffle shavings, parmesan crisp, forest mushrooms</p><div class="menu-item-footer"><span class="price">₹1,199</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef's Crown -->
+      <div class="tab-panel" id="tab-chef">
+        <div class="menu-items-grid">
+          <div class="menu-item chef-item">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Shortrib" />
+            <div class="menu-item-info">
+              <span class="limit-badge">Limited: 8 per day</span>
+              <h4>72hr Braised Shortrib Royale</h4>
+              <p>Three-day braised prime short rib, bone marrow glaze, celery purée, heritage carrots</p>
+              <em class="chef-note">"My signature masterpiece" — Chef Arjun</em>
+              <div class="menu-item-footer"><span class="price">₹2,299</span><button class="btn-add-sm">Reserve</button></div>
+            </div>
+          </div>
+          <div class="menu-item chef-item">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=400&q=80" alt="Saffron Risotto" />
+            <div class="menu-item-info">
+              <span class="limit-badge">Limited: 10 per day</span>
+              <h4>Saffron Risotto Supreme</h4>
+              <p>Finest Iranian saffron, slow-stirred Carnaroli, burrata, truffle honey drizzle</p>
+              <em class="chef-note">"Italian luxury, Indian soul" — Chef Arjun</em>
+              <div class="menu-item-footer"><span class="price">₹1,699</span><button class="btn-add-sm">Reserve</button></div>
+            </div>
+          </div>
+          <div class="menu-item chef-item">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80" alt="Turmeric Cod" />
+            <div class="menu-item-info">
+              <span class="limit-badge">Limited: 6 per day</span>
+              <h4>Golden Turmeric Cod</h4>
+              <p>Wild Pacific cod, heirloom turmeric crust, coconut velouté, pickled mango salsa</p>
+              <em class="chef-note">"Health meets luxury" — Chef Arjun</em>
+              <div class="menu-item-footer"><span class="price">₹1,899</span><button class="btn-add-sm">Reserve</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="tab-panel" id="tab-desserts">
+        <div class="menu-items-grid">
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=80" alt="Chocolate Dome" />
+            <div class="menu-item-info"><h4>Gold Chocolate Dome</h4><p>Belgian dark chocolate, edible 24k gold flakes, vanilla bourbon cream</p><div class="menu-item-footer"><span class="price">₹799</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=400&q=80" alt="Crème Brûlée" />
+            <div class="menu-item-info"><h4>Emperor's Crème Brûlée</h4><p>Madagascan vanilla custard, gold sugar brûlée crown, fresh berry compote</p><div class="menu-item-footer"><span class="price">₹649</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1568051243858-533a607809a5?auto=format&fit=crop&w=400&q=80" alt="Mango Tart" />
+            <div class="menu-item-info"><h4>Golden Mango Tart</h4><p>Alphonso mango mousse, edible gold flakes, passionfruit coulis, almond tart</p><div class="menu-item-footer"><span class="price">₹599</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=400&q=80" alt="Champagne Sorbet" />
+            <div class="menu-item-info"><h4>Champagne Sorbet Royale</h4><p>Krug Grand Cuvée sorbet, edible gold flakes, fresh mint, lychee pearl</p><div class="menu-item-footer"><span class="price">₹549</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mocktails -->
+      <div class="tab-panel" id="tab-mocktails">
+        <div class="menu-items-grid">
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=400&q=80" alt="Mango Mist" />
+            <div class="menu-item-info"><h4>Golden Mango Mist</h4><p>Alphonso mango purée, edible gold flakes, sparkling water, cardamom foam</p><div class="menu-item-footer"><span class="price">₹499</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80" alt="Rose Fizz" />
+            <div class="menu-item-info"><h4>Rose Champagne Fizz</h4><p>Damascus rose syrup, Champagne base, edible flowers, lavender bitters</p><div class="menu-item-footer"><span class="price">₹599</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=400&q=80" alt="Truffle Lemonade" />
+            <div class="menu-item-info"><h4>Truffle Lemonade</h4><p>Black truffle-infused lemon base, sparkling herb water, rosemary sprig</p><div class="menu-item-footer"><span class="price">₹449</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beverages -->
+      <div class="tab-panel" id="tab-beverages">
+        <div class="menu-items-grid">
+          <div class="menu-item featured-item">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80" alt="Champagne" />
+            <div class="menu-item-info"><span class="item-label">Premium</span><h4>Vintage Champagne</h4><p>French Champagne, Reims 2015 vintage, hand-disgorgement, Grand Cru designation</p><div class="menu-item-footer"><span class="price">₹8,999</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item featured-item">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=400&q=80" alt="Whiskey" />
+            <div class="menu-item-info"><span class="item-label">Premium</span><h4>Royal Whiskey Selection</h4><p>Curated Scotch single malt, 12-year Speyside aged, crystal Glencairn</p><div class="menu-item-footer"><span class="price">₹3,499</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+          <div class="menu-item featured-item">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=400&q=80" alt="Wine" />
+            <div class="menu-item-info"><span class="item-label">Premium</span><h4>Premium Wine Pairing</h4><p>Sommelier-curated wine flight matched to your chosen courses, 4-glass selection</p><div class="menu-item-footer"><span class="price">₹2,499</span><button class="btn-add-sm">Add</button></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Packages -->
+      <div class="tab-panel" id="tab-packages">
+        <div class="menu-items-grid">
+          <div class="menu-item package-item">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=400&q=80" alt="Legend Duo" />
+            <div class="menu-item-info">
+              <span class="item-label">Package</span>
+              <h4>Legend Duo</h4>
+              <p>2 signature dishes + 2 artisanal mocktails. Perfect for a date night or celebratory pairing.</p>
+              <ul class="package-includes"><li>✓ 2 Signature Dishes of choice</li><li>✓ 2 Artisanal Mocktails</li><li>✓ Bread &amp; Butter amuse-bouche</li></ul>
+              <div class="menu-item-footer"><span class="price">₹3,499</span><button class="btn-add-sm">Book</button></div>
+            </div>
+          </div>
+          <div class="menu-item package-item">
+            <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=400&q=80" alt="Emperor's Feast" />
+            <div class="menu-item-info">
+              <span class="item-label">Package</span>
+              <h4>Emperor's Feast</h4>
+              <p>Full group dining experience with a curated procession of signature courses.</p>
+              <ul class="package-includes"><li>✓ 4 Signature Dishes</li><li>✓ 4 Artisanal Mocktails</li><li>✓ Dessert of the Day</li><li>✓ Chef's Amuse-Bouche</li></ul>
+              <div class="menu-item-footer"><span class="price">₹5,999</span><button class="btn-add-sm">Book</button></div>
+            </div>
+          </div>
+          <div class="menu-item package-item best-value">
+            <div class="best-val-badge">Best Value</div>
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=400&q=80" alt="GOAT Ultimate" />
+            <div class="menu-item-info">
+              <span class="item-label">Package</span>
+              <h4>GOAT Ultimate</h4>
+              <p>The definitive GOAT experience—every course, every sensation, nothing withheld.</p>
+              <ul class="package-includes"><li>✓ Full Premium Menu</li><li>✓ Wine Pairing (4 glasses)</li><li>✓ Dessert &amp; Petits Fours</li><li>✓ Champagne Welcome</li><li>✓ Chef's Table access</li></ul>
+              <div class="menu-item-footer"><span class="price">₹9,999</span><button class="btn-add-sm">Book</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /menu-content -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 11: CHEF SPECIALS                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="chef-specials" class="section-chef-specials">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Exclusive</span>
+      <h2>Chef's Crown Creations</h2>
+      <p class="section-desc">Exclusive dishes crafted only for The GOAT—available by reservation only.</p>
+    </div>
+    <div class="specials-grid">
+      <div class="special-card reveal-up" style="--delay:0s">
+        <div class="special-img">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=85" alt="72hr Braised Shortrib" />
+          <span class="limit-badge pulse">Limited: 8 per day</span>
+        </div>
+        <div class="special-info">
+          <h3>72hr Braised Shortrib Royale</h3>
+          <p>Three-day braised prime short rib, whipped bone marrow glaze, celery root purée, heritage carrots, jus gras</p>
+          <blockquote class="chef-quote">"My signature masterpiece — every bite tells a story." <cite>— Chef Arjun Krishnan</cite></blockquote>
+          <div class="special-footer"><span class="price">₹2,299</span><a href="#reservations" class="btn-primary">Reserve Now</a></div>
+        </div>
+      </div>
+      <div class="special-card reveal-up" style="--delay:0.15s">
+        <div class="special-img">
+          <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=700&q=85" alt="Saffron Risotto" />
+          <span class="limit-badge pulse">Limited: 10 per day</span>
+        </div>
+        <div class="special-info">
+          <h3>Saffron Risotto Supreme</h3>
+          <p>Finest Iranian saffron, slow-stirred Carnaroli rice, burrata centrepiece, truffle honey drizzle, edible flowers</p>
+          <blockquote class="chef-quote">"Italian luxury, Indian soul — my two worlds in one bowl." <cite>— Chef Arjun Krishnan</cite></blockquote>
+          <div class="special-footer"><span class="price">₹1,699</span><a href="#reservations" class="btn-primary">Reserve Now</a></div>
+        </div>
+      </div>
+      <div class="special-card reveal-up" style="--delay:0.3s">
+        <div class="special-img">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=85" alt="Golden Turmeric Cod" />
+          <span class="limit-badge pulse">Limited: 6 per day</span>
+        </div>
+        <div class="special-info">
+          <h3>Golden Turmeric Cod</h3>
+          <p>Wild Pacific cod, heirloom turmeric crust, coconut velouté, pickled mango salsa, crispy curry leaves</p>
+          <blockquote class="chef-quote">"Where health meets luxury — proof they were never opposites." <cite>— Chef Arjun Krishnan</cite></blockquote>
+          <div class="special-footer"><span class="price">₹1,899</span><a href="#reservations" class="btn-primary">Reserve Now</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 12: TODAY'S SPECIAL                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-today">
+  <div class="container">
+    <div class="today-card reveal-up">
+      <div class="today-badge">Today's Exclusive Triumph</div>
+      <div class="today-inner">
+        <div class="today-img">
+          <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=90" alt="Golden Lobster Thermidor Special" />
+          <div class="today-discount">24% OFF</div>
+        </div>
+        <div class="today-info">
+          <h2>Golden Lobster<br/>Thermidor Special</h2>
+          <p>Our legendary whole lobster—Champagne butter, edible gold, Gruyère gratin—available today at an extraordinary price.</p>
+          <div class="today-pricing">
+            <span class="today-original">₹2,499</span>
+            <span class="today-price">₹1,899</span>
+          </div>
+          <div class="today-meta">
+            <span>📅 June 10, 2026 Only</span>
+          </div>
+          <div class="today-timer">
+            <span class="timer-icon">⏰</span>
+            <span class="timer-label">Offer ends in:</span>
+            <div class="countdown" id="countdown">
+              <div class="cd-unit"><span id="cd-h">08</span><label>Hrs</label></div>
+              <div class="cd-sep">:</div>
+              <div class="cd-unit"><span id="cd-m">00</span><label>Min</label></div>
+              <div class="cd-sep">:</div>
+              <div class="cd-unit"><span id="cd-s">00</span><label>Sec</label></div>
+            </div>
+          </div>
+          <a href="#reservations" class="btn-primary large pulse-btn">Order Today</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 13: INGREDIENTS QUALITY                    -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-ingredients">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Provenance</span>
+      <h2>From Premium Sources to Your Plate</h2>
+    </div>
+    <div class="ingredients-grid">
+      <div class="ingr-card reveal-up" style="--delay:0s">
+        <div class="ingr-img"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=500&q=80" alt="Farm to table" /></div>
+        <div class="ingr-icon">🌿</div>
+        <h3>Farm-to-Table</h3>
+        <p>Direct sourcing from Chennai's finest organic farms, harvested within 24 hours of your meal</p>
+      </div>
+      <div class="ingr-card reveal-up" style="--delay:0.1s">
+        <div class="ingr-img"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=80" alt="Organic Certified" /></div>
+        <div class="ingr-icon">✓</div>
+        <h3>Organic Certified</h3>
+        <p>100% certified organic vegetables and herbs—no pesticides, no compromise, always seasonal</p>
+      </div>
+      <div class="ingr-card reveal-up" style="--delay:0.2s">
+        <div class="ingr-img"><img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&w=500&q=80" alt="Premium Meats" /></div>
+        <div class="ingr-icon">🥩</div>
+        <h3>Premium Meats</h3>
+        <p>A5 Wagyu direct from Miyazaki, prime ribeye dry-aged in-house, all ethically sourced</p>
+      </div>
+      <div class="ingr-card reveal-up" style="--delay:0.3s">
+        <div class="ingr-img"><img src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?auto=format&fit=crop&w=500&q=80" alt="Fresh Daily" /></div>
+        <div class="ingr-icon">🐟</div>
+        <h3>Fresh Daily</h3>
+        <p>All fish and seafood delivered fresh every morning from Chennai's top sustainable fisheries</p>
+      </div>
+      <div class="ingr-card reveal-up" style="--delay:0.4s">
+        <div class="ingr-img"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="No Artificial" /></div>
+        <div class="ingr-icon">✨</div>
+        <h3>No Artificial</h3>
+        <p>0% artificial flavors, colors, or preservatives—pure ingredients, pure taste, every time</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 14: MEET THE CHEF                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-chef">
+  <div class="container">
+    <div class="chef-grid">
+      <div class="chef-photo reveal-left">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=700&q=85" alt="Chef Arjun Krishnan" />
+        <div class="chef-signature">Arjun Krishnan</div>
+      </div>
+      <div class="chef-bio reveal-right">
+        <span class="section-eyebrow">The Mastermind</span>
+        <h2>Meet Chef Arjun Krishnan</h2>
+        <p class="chef-title">Executive Chef &amp; Culinary Director</p>
+        <p>Michelin-trained at Paris's Institut Paul Bocuse, Chef Arjun Krishnan has spent 20+ years mastering the art of fine dining across three continents—refining his craft at two-star establishments in Paris, studying kaiseki precision in Tokyo, and discovering the soul of his cooking in Mumbai's vibrant food culture.</p>
+        <p>Winner of 'Best Chef India 2024' and the youngest Indian chef ever to earn a Michelin star on French soil, Chef Arjun returned to his Tamil Nadu roots in 2018 to build The GOAT—his life's greatest work. His philosophy: every dish must make the guest feel legendary.</p>
+        <blockquote class="chef-big-quote">"Every dish I create is a masterpiece intended to make you feel legendary."</blockquote>
+        <div class="chef-achievements">
+          <div class="ach-badge">🌟 Michelin Star, Paris 2018</div>
+          <div class="ach-badge">🏆 Best Chef India 2024</div>
+          <div class="ach-badge">🎓 Institut Paul Bocuse</div>
+          <div class="ach-badge">📍 20+ Years Fine Dining</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 15: TEAM SHOWCASE                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-team">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Our People</span>
+      <h2>The GOAT Hospitality Team</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal-up" style="--delay:0s">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?auto=format&fit=crop&w=400&q=80" alt="Chef Priya" /></div>
+        <h3>Chef Priya Sharma</h3><p>Head of Pastas &amp; Italian Cuisine</p>
+      </div>
+      <div class="team-card reveal-up" style="--delay:0.1s">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?auto=format&fit=crop&w=400&q=80" alt="Chef Rajesh" /></div>
+        <h3>Chef Rajesh Kumar</h3><p>Sous Chef, Grill &amp; Live Fire</p>
+      </div>
+      <div class="team-card reveal-up" style="--delay:0.2s">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?auto=format&fit=crop&w=400&q=80" alt="Anjali" /></div>
+        <h3>Anjali Menon</h3><p>Director of Guest Experience</p>
+      </div>
+      <div class="team-card reveal-up" style="--delay:0.3s">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=400&q=80" alt="Vikram" /></div>
+        <h3>Vikram Patel</h3><p>Head Sommelier</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 16: AMBIENCE                               -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="ambience" class="section-ambience">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">The Space</span>
+      <h2>Where Luxury Becomes Experience</h2>
+    </div>
+  </div>
+  <div class="ambience-mosaic">
+    <div class="amb-item large reveal-up" style="--delay:0s">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="Main Dining Room" />
+      <div class="amb-caption">Main Dining Room · Seats 80</div>
+    </div>
+    <div class="amb-item reveal-up" style="--delay:0.1s">
+      <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=600&q=85" alt="Private Dining Room" />
+      <div class="amb-caption">Private Dining · Up to 20 Guests</div>
+    </div>
+    <div class="amb-item reveal-up" style="--delay:0.2s">
+      <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=600&q=85" alt="Bar Lounge" />
+      <div class="amb-caption">The GOAT Bar &amp; Lounge</div>
+    </div>
+    <div class="amb-item reveal-up" style="--delay:0.3s">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=85" alt="Terrace" />
+      <div class="amb-caption">Open Terrace · Al Fresco Dining</div>
+    </div>
+    <div class="amb-item reveal-up" style="--delay:0.4s">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=85" alt="Detail" />
+      <div class="amb-caption">Bespoke Table Settings</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 17: PHOTO GALLERY                          -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-gallery">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Gallery</span>
+      <h2>Visual Symphony of Luxury</h2>
+    </div>
+    <div class="gallery-filters">
+      <button class="gfilter active" data-filter="all">All</button>
+      <button class="gfilter" data-filter="food">Food</button>
+      <button class="gfilter" data-filter="interior">Interior</button>
+      <button class="gfilter" data-filter="events">Events</button>
+    </div>
+    <div class="gallery-masonry" id="gallery">
+      <div class="gal-item food" data-caption="GOAT Ribeye Prime — 45-day aged perfection">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Ribeye" />
+        <div class="gal-overlay"><span>GOAT Ribeye Prime</span></div>
+      </div>
+      <div class="gal-item interior" data-caption="The GOAT Main Dining Room — 80 covers of luxury">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80" alt="Interior" />
+        <div class="gal-overlay"><span>Main Dining Room</span></div>
+      </div>
+      <div class="gal-item food" data-caption="Golden Lobster Thermidor — edible gold on Champagne butter">
+        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=500&q=80" alt="Lobster" />
+        <div class="gal-overlay"><span>Golden Lobster Thermidor</span></div>
+      </div>
+      <div class="gal-item events" data-caption="Private Dining — curated for your celebration">
+        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=500&q=80" alt="Events" />
+        <div class="gal-overlay"><span>Private Dining Events</span></div>
+      </div>
+      <div class="gal-item food" data-caption="Truffle Mushroom Risotto — Italian soul">
+        <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=500&q=80" alt="Risotto" />
+        <div class="gal-overlay"><span>Truffle Mushroom Risotto</span></div>
+      </div>
+      <div class="gal-item interior" data-caption="The GOAT Bar — where legends sip">
+        <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=500&q=80" alt="Bar" />
+        <div class="gal-overlay"><span>The GOAT Bar</span></div>
+      </div>
+      <div class="gal-item food" data-caption="Emperor's Dim Sum — 12 pieces of artistry">
+        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=500&q=80" alt="Dim Sum" />
+        <div class="gal-overlay"><span>Emperor's Dim Sum</span></div>
+      </div>
+      <div class="gal-item events" data-caption="Anniversary Celebration — unforgettable moments">
+        <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=500&q=80" alt="Celebration" />
+        <div class="gal-overlay"><span>Anniversary Dinner</span></div>
+      </div>
+      <div class="gal-item food" data-caption="Gold Chocolate Dome — Belgian luxury">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&q=80" alt="Dessert" />
+        <div class="gal-overlay"><span>Gold Chocolate Dome</span></div>
+      </div>
+      <div class="gal-item interior" data-caption="Open Terrace — al fresco under the stars">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=80" alt="Terrace" />
+        <div class="gal-overlay"><span>Open Terrace</span></div>
+      </div>
+      <div class="gal-item food" data-caption="Champagne Salmon Royale — Norwegian perfection">
+        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=500&q=80" alt="Salmon" />
+        <div class="gal-overlay"><span>Champagne Salmon Royale</span></div>
+      </div>
+      <div class="gal-item events" data-caption="Corporate Dining — up to 50 guests">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Corporate" />
+        <div class="gal-overlay"><span>Corporate Events</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery Modal -->
+  <div class="gallery-modal" id="galleryModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-inner">
+      <button class="modal-close" id="modalClose">✕</button>
+      <img src="" alt="" id="modalImg" />
+      <p id="modalCaption"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 18: VIDEO SHOWCASE                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-videos">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">In Motion</span>
+      <h2>Experience The GOAT in Motion</h2>
+    </div>
+    <div class="videos-grid">
+      <div class="video-thumb reveal-up" style="--delay:0s">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=85" alt="Dish Preparation" />
+        <div class="video-overlay">
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+          <div class="video-info"><h4>Dish Preparation</h4><span>60 sec · Chef Arjun at work</span></div>
+        </div>
+      </div>
+      <div class="video-thumb reveal-up" style="--delay:0.15s">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=85" alt="Ambience Tour" />
+        <div class="video-overlay">
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+          <div class="video-info"><h4>Ambience Tour</h4><span>90 sec · Full restaurant walkthrough</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 19: REVIEWS                                -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-reviews">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Testimonials</span>
+      <h2>Legends Speak Through Their Experiences</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal-up" style="--delay:0s">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/60?img=47" alt="Priya Sharma" />
+          <div><strong>Priya Sharma</strong><span>Chennai</span></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"The GOAT exceeded every expectation. The GOAT Ribeye is the finest piece of beef I have eaten in my life—the truffle butter alone is worth the visit. Arjun's team made us feel like royalty from arrival to dessert."</p>
+        <span class="review-date">May 2026</span>
+      </div>
+      <div class="review-card reveal-up" style="--delay:0.1s">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/60?img=52" alt="Rajesh Kumar" />
+          <div><strong>Rajesh Kumar</strong><span>Bengaluru</span></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"Premium luxury at every level. We brought international clients here for a corporate dinner and they were absolutely stunned. The ambiance, the service choreography, the dishes—worth every single rupee."</p>
+        <span class="review-date">April 2026</span>
+      </div>
+      <div class="review-card reveal-up" style="--delay:0.2s">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/60?img=5" alt="Anjali Menon" />
+          <div><strong>Anjali Menon</strong><span>Kochi</span></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"Best birthday dinner I have ever experienced. The cinematic ambiance made every photo look like a professional shoot. The private dining room was decorated exactly to my brief. Absolutely magical evening."</p>
+        <span class="review-date">April 2026</span>
+      </div>
+      <div class="review-card reveal-up" style="--delay:0.3s">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/60?img=33" alt="Vikram Patel" />
+          <div><strong>Vikram Patel</strong><span>Mumbai</span></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"As someone who travels globally for food, GOAT stands shoulder-to-shoulder with Europe's finest. The 72hr Shortrib is the best meat dish I have eaten anywhere—extraordinary technique and flavour depth."</p>
+        <span class="review-date">March 2026</span>
+      </div>
+      <div class="review-card reveal-up" style="--delay:0.4s">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/60?img=9" alt="Sneha Reddy" />
+          <div><strong>Sneha Reddy</strong><span>Hyderabad</span></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"Perfect for corporate events. The private dining room accommodated 18 guests flawlessly. The service team anticipated every need without being asked. This is what hospitality is supposed to feel like."</p>
+        <span class="review-date">March 2026</span>
+      </div>
+      <div class="review-card reveal-up" style="--delay:0.5s">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/60?img=21" alt="Arun Krishnan" />
+          <div><strong>Arun Krishnan</strong><span>Chennai</span></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"Celebrated my 10th anniversary here. Chef Arjun came to our table personally, explained each dish, and even sent a complimentary champagne sorbet with a handwritten note. Absolutely unforgettable."</p>
+        <span class="review-date">February 2026</span>
+      </div>
+      <div class="review-card reveal-up" style="--delay:0.6s">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/60?img=41" alt="Meera Iyer" />
+          <div><strong>Meera Iyer</strong><span>Chennai</span></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"The Chef's Specials are absolutely worth the reservation. I had the Saffron Risotto Supreme—it had the texture of a dream. The Golden Turmeric Cod was the most beautiful dish I have ever seen plated."</p>
+        <span class="review-date">January 2026</span>
+      </div>
+      <div class="review-card reveal-up" style="--delay:0.7s">
+        <div class="review-header">
+          <img src="https://i.pravatar.cc/60?img=15" alt="Karthik Nair" />
+          <div><strong>Karthik Nair</strong><span>Chennai</span></div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p>"Chennai's absolute finest. We visited on a whim and stayed for three hours because we couldn't bear to leave. Every dish is a masterpiece, every sip is curated, and every moment is cinematic."</p>
+        <span class="review-date">December 2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 20 & 21: SPECIAL OFFERS                    -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="offers" class="section-offers">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Exclusive Privileges</span>
+      <h2>GOAT Exclusive Offers</h2>
+    </div>
+    <div class="offers-grid">
+      <div class="offer-card reveal-up" style="--delay:0s">
+        <div class="offer-badge">Save ₹1,000</div>
+        <div class="offer-icon">👑</div>
+        <h3>Legend Duo Package</h3>
+        <p>Two signature dishes, two artisanal mocktails, and a complimentary amuse-bouche—crafted for two legends.</p>
+        <div class="offer-price"><span class="orig">₹4,499</span><span class="final">₹3,499</span></div>
+        <p class="offer-valid">Valid: June 2026 · New and returning guests</p>
+        <a href="#reservations" class="btn-primary">Book Now</a>
+      </div>
+      <div class="offer-card reveal-up" style="--delay:0.15s">
+        <div class="offer-badge new">20% OFF</div>
+        <div class="offer-icon">🎁</div>
+        <h3>First Visit Bonus</h3>
+        <p>New to The GOAT? Your first experience deserves a grand welcome. Enjoy 20% off your entire first visit.</p>
+        <div class="offer-price"><span class="final">20% OFF Everything</span></div>
+        <p class="offer-valid">New guests only · Valid June–July 2026</p>
+        <a href="#reservations" class="btn-primary">Book Now</a>
+      </div>
+      <div class="offer-card seasonal reveal-up" style="--delay:0.3s">
+        <div class="offer-badge seasonal-badge">Seasonal</div>
+        <div class="offer-icon">☀️</div>
+        <h3>Summer Luxury Special</h3>
+        <p>This season, every dessert on the menu carries 15% off—from our Gold Chocolate Dome to the Champagne Sorbet.</p>
+        <div class="offer-price"><span class="final">15% OFF All Desserts</span></div>
+        <p class="offer-valid">Valid: June–July 2026 · All guests</p>
+        <a href="#reservations" class="btn-primary">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 22: LOYALTY PROGRAM                        -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-loyalty">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Loyalty</span>
+      <h2>Become a GOAT Legend</h2>
+      <p class="section-desc">Join the GOAT Legends Club and earn privileges that match your loyalty.</p>
+    </div>
+    <div class="loyalty-tiers">
+      <div class="tier-card bronze reveal-up" style="--delay:0s">
+        <div class="tier-crown">🥉</div>
+        <h3>Bronze</h3>
+        <p class="tier-req">Join Free</p>
+        <ul class="tier-benefits">
+          <li>5% off all orders</li>
+          <li>Birthday discount voucher</li>
+          <li>Early access to seasonal menus</li>
+          <li>GOAT Legends newsletter</li>
+        </ul>
+        <a href="#reservations" class="btn-tier">Join Free</a>
+      </div>
+      <div class="tier-card silver reveal-up" style="--delay:0.15s">
+        <div class="tier-crown">🥈</div>
+        <h3>Silver</h3>
+        <p class="tier-req">5 Visits</p>
+        <ul class="tier-benefits">
+          <li>10% off all orders</li>
+          <li>Priority booking access</li>
+          <li>Complimentary mocktail on arrival</li>
+          <li>All Bronze benefits</li>
+        </ul>
+        <a href="#reservations" class="btn-tier">Get Started</a>
+      </div>
+      <div class="tier-card gold reveal-up featured-tier" style="--delay:0.3s">
+        <div class="tier-best">Most Exclusive</div>
+        <div class="tier-crown">🥇</div>
+        <h3>Gold</h3>
+        <p class="tier-req">15 Visits</p>
+        <ul class="tier-benefits">
+          <li>15% off all orders</li>
+          <li>Chef's Table access</li>
+          <li>Exclusive member events</li>
+          <li>Complimentary wine on arrival</li>
+          <li>All Silver benefits</li>
+        </ul>
+        <a href="#reservations" class="btn-tier gold-btn">Earn Gold</a>
+      </div>
+    </div>
+    <div class="loyalty-cta">
+      <a href="#reservations" class="btn-primary large">Join GOAT Legends Club</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTIONS 23-26: EVENTS, BIRTHDAYS, CORPORATE       -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="events" class="section-events">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Private Events</span>
+      <h2>Celebrate Legends in Luxury</h2>
+    </div>
+    <div class="events-grid">
+      <div class="event-card reveal-up" style="background-image:url('https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=600&q=80'); --delay:0s">
+        <div class="event-overlay"></div>
+        <div class="event-info">
+          <div class="event-icon">🍽️</div>
+          <h3>Private Dining</h3>
+          <p>Exclusive dining room for up to 20 guests. Custom menu, private service team, curated ambiance.</p>
+          <a href="#reservations" class="btn-event">Inquire Now</a>
+        </div>
+      </div>
+      <div class="event-card reveal-up" style="background-image:url('https://images.unsplash.com/photo-1529543544282-ea669407fca3?auto=format&fit=crop&w=600&q=80'); --delay:0.1s">
+        <div class="event-overlay"></div>
+        <div class="event-info">
+          <div class="event-icon">🎂</div>
+          <h3>Birthday Celebrations</h3>
+          <p>Make it legendary. Custom cake, decoration, signature birthday menu—exclusively yours.</p>
+          <a href="#reservations" class="btn-event">Plan My Birthday</a>
+        </div>
+      </div>
+      <div class="event-card reveal-up" style="background-image:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80'); --delay:0.2s">
+        <div class="event-overlay"></div>
+        <div class="event-info">
+          <div class="event-icon">💼</div>
+          <h3>Corporate Events</h3>
+          <p>Impress clients, celebrate milestones. Private venue up to 50 guests, premium menu, AV support.</p>
+          <a href="#reservations" class="btn-event">Inquire Now</a>
+        </div>
+      </div>
+      <div class="event-card reveal-up" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80'); --delay:0.3s">
+        <div class="event-overlay"></div>
+        <div class="event-info">
+          <div class="event-icon">💍</div>
+          <h3>Anniversary Packages</h3>
+          <p>Intimate and unforgettable. Champagne toast, rose petal setup, custom dessert—for your greatest day.</p>
+          <a href="#reservations" class="btn-event">Plan My Anniversary</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Birthday Packages -->
+<section class="section-birthday">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Birthdays</span>
+      <h2>Legendary Birthday Experiences</h2>
+    </div>
+    <div class="bday-grid">
+      <div class="bday-card reveal-up" style="--delay:0s">
+        <div class="bday-icon">🎂</div>
+        <h3>Legend Birthday</h3>
+        <p class="bday-guests">Up to 6 Guests</p>
+        <ul class="bday-includes">
+          <li>✓ 2 Signature Dishes per guest</li>
+          <li>✓ Bespoke birthday dessert &amp; cake</li>
+          <li>✓ Custom table decoration</li>
+          <li>✓ GOAT birthday keepsake</li>
+        </ul>
+        <div class="bday-price">₹4,999</div>
+        <a href="#reservations" class="btn-primary">Book Now</a>
+      </div>
+      <div class="bday-card featured-bday reveal-up" style="--delay:0.15s">
+        <div class="bday-popular">Most Popular</div>
+        <div class="bday-icon">👑</div>
+        <h3>Emperor's Celebration</h3>
+        <p class="bday-guests">Up to 12 Guests</p>
+        <ul class="bday-includes">
+          <li>✓ Full premium menu for all guests</li>
+          <li>✓ Wine pairing (4 glasses each)</li>
+          <li>✓ Custom birthday cake &amp; dessert</li>
+          <li>✓ Rose petal &amp; gold decoration</li>
+          <li>✓ Champagne welcome toast</li>
+          <li>✓ Personal photograph session</li>
+        </ul>
+        <div class="bday-price">₹9,999</div>
+        <a href="#reservations" class="btn-primary">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Corporate + Catering -->
+<section class="section-corporate">
+  <div class="container">
+    <div class="corp-grid">
+      <div class="corp-card reveal-left">
+        <span class="section-eyebrow">Corporate</span>
+        <h2>Corporate Dining Excellence</h2>
+        <p>The GOAT provides an unmatched venue for corporate occasions—whether an intimate client dinner or a milestone celebration for 50 guests.</p>
+        <ul class="corp-features">
+          <li>🏛️ Private venue for up to 50 guests</li>
+          <li>🍷 Premium menu &amp; wine pairing options</li>
+          <li>💻 AV support &amp; presentation setup</li>
+          <li>📋 Customised menu curation</li>
+          <li>🎖️ Dedicated event coordinator</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Inquire for Corporate Booking</a>
+      </div>
+      <div class="corp-card reveal-right">
+        <span class="section-eyebrow">Catering</span>
+        <h2>GOAT Luxury, Anywhere</h2>
+        <p>Bring The GOAT experience to your venue. Our off-site catering service delivers the same Michelin-calibre food and service to your location—anywhere in Chennai.</p>
+        <ul class="corp-features">
+          <li>🚚 Off-site catering for 20–200 guests</li>
+          <li>🍽️ Full premium menu available</li>
+          <li>👨‍🍳 Chef Arjun's team on-site</li>
+          <li>📦 Custom packages to your brief</li>
+          <li>🎪 Weddings, galas, product launches</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Request Catering Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 27: RESERVATIONS + ORDERING                -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="reservations" class="section-reservation">
+  <div class="res-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=85')"></div>
+  <div class="res-overlay"></div>
+  <div class="container">
+    <div class="res-inner">
+      <div class="res-text reveal-left">
+        <span class="section-eyebrow light">Reserve</span>
+        <h2 class="light">Your Table Awaits,<br/>Legend</h2>
+        <p class="light">Reserve your experience at The GOAT—where every moment is legendary. Walk in as a guest, leave as a legend.</p>
+        <div class="res-features">
+          <div class="res-feat"><span>📍</span> Anna Nagar, Chennai</div>
+          <div class="res-feat"><span>🕐</span> Daily 11:00 AM – 11:00 PM</div>
+          <div class="res-feat"><span>📞</span> +91 44 1234 5678</div>
+          <div class="res-feat"><span>📧</span> reservations@thegoatrestaurant.com</div>
+        </div>
+      </div>
+      <div class="res-form reveal-right">
+        <form class="booking-form" id="bookingForm">
+          <h3>Book Your Table</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date</label>
+              <input type="date" name="date" min="2026-06-10" required />
+            </div>
+            <div class="form-group">
+              <label>Time</label>
+              <select name="time" required>
+                <option value="">Select time</option>
+                <option>11:00 AM</option><option>12:00 PM</option>
+                <option>1:00 PM</option><option>2:00 PM</option>
+                <option>3:00 PM</option><option>5:00 PM</option>
+                <option>6:00 PM</option><option>7:00 PM</option>
+                <option>8:00 PM</option><option>9:00 PM</option>
+                <option>10:00 PM</option><option>11:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Guests</label>
+              <select name="guests" required>
+                <option value="">No. of guests</option>
+                <option>1 guest</option><option>2 guests</option><option>3 guests</option>
+                <option>4 guests</option><option>5 guests</option><option>6 guests</option>
+                <option>8 guests</option><option>10 guests</option>
+                <option>12 guests</option><option>15 guests</option><option>20 guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your full name" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone</label>
+              <div class="phone-wrap"><span class="phone-prefix">+91</span><input type="tel" name="phone" placeholder="98765 43210" /></div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your@email.com" />
+            </div>
+          </div>
+          <div class="form-group full">
+            <label>Special Requests <span class="optional">(optional)</span></label>
+            <textarea name="requests" rows="3" placeholder="Allergies, dietary preferences, celebrations, special setup..."></textarea>
+          </div>
+          <div class="form-btns">
+            <button type="submit" class="btn-primary large full-width pulse-btn">Book Your Table</button>
+            <a href="#menu" class="btn-ghost full-width">Order Online Instead</a>
+          </div>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Reservation Confirmed!</h3>
+          <p>Your table has been reserved. Our team will confirm via email and phone within 30 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 28: LOCATION & CONTACT                     -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section id="contact" class="section-contact">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Find Us</span>
+      <h2>Visit The GOAT</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><h4>Address</h4><p>123 Luxury Road, Anna Nagar<br/>Chennai, Tamil Nadu 600040</p></div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-phone"></i></div>
+          <div><h4>Phone</h4><p><a href="tel:+914412345678">+91 44 1234 5678</a></p></div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+          <div><h4>Email</h4><p><a href="mailto:reservations@thegoatrestaurant.com">reservations@thegoatrestaurant.com</a></p></div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>Operating Hours</h4>
+            <table class="hours-table">
+              <tr><td>Monday – Sunday</td><td>11:00 AM – 11:00 PM</td></tr>
+              <tr><td>Last order</td><td>10:30 PM</td></tr>
+              <tr><td>Kitchen open</td><td>All day</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map reveal-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.6!2d80.2090!3d13.0878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sAnna+Nagar%2C+Chennai!5e0!3m2!1sen!2sin!4v1620000000000"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="The GOAT Restaurant Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 29: FAQ                                    -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-faq">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal-up">
+        <button class="faq-q">Do I need to reserve in advance? <span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Yes, reservations are strongly recommended, particularly for Friday through Sunday evenings and all public holidays. Walk-ins are welcome based on availability. For Chef's Specials and the private dining room, advance booking is essential as these are limited each day.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-q">What is the dress code? <span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>We recommend smart casual to formal attire. The GOAT is a fine dining establishment and we kindly request guests dress to match the occasion. Luxury attire is appreciated and celebrated here.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-q">Do you offer vegetarian options? <span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Absolutely. We have an extensive vegetarian menu available with premium options including the Truffle Mushroom Risotto, Golden Mushroom Tart, Emperor's Dim Sum (vegetarian variant), and several starters. Our kitchen is also happy to accommodate vegan requests with advance notice.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-q">Can I bring my own wine? <span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Yes, a corkage fee of ₹1,500 per bottle applies for guests who wish to bring their own wine. We recommend discussing this with our team in advance. Our sommelier Vikram Patel is always happy to recommend from our extensive cellar instead.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-q">Do you have private dining? <span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Yes. Our private dining room accommodates up to 20 guests in complete privacy. It features a dedicated service team, customisable menu, AV capabilities, and bespoke decoration options. Contact us to discuss your requirements.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-q">What is the parking situation? <span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Complimentary valet parking is available for all guests at our dedicated facility accommodating 50+ vehicles. Simply inform our host upon arrival. We also have reserved spaces for guests with accessibility requirements.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-q">Are pets allowed? <span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Well-behaved pets are welcome on our open terrace seating area. Please inform us when making your reservation so we can arrange an appropriate table and water bowl. Indoor dining areas are not pet-accessible.</p></div>
+      </div>
+      <div class="faq-item reveal-up">
+        <button class="faq-q">Do you offer catering services? <span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Yes. The GOAT offers off-site catering for events of 20 to 200 guests anywhere in Chennai. We bring our full kitchen team, premium menu, and service staff to your venue. Please contact us at least 2 weeks in advance for event catering enquiries.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 30: SOCIAL + NEWSLETTER                    -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-social">
+  <div class="container">
+    <div class="social-inner">
+      <div class="social-links-wrap reveal-left">
+        <span class="section-eyebrow">Stay Connected</span>
+        <h2>Stay Connected with GOAT</h2>
+        <div class="social-links">
+          <a href="#" class="social-link insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span>@thegoatchennai</span></a>
+          <a href="#" class="social-link fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i><span>/thegoatrestaurant</span></a>
+          <a href="#" class="social-link tw" aria-label="Twitter"><i class="fab fa-twitter"></i><span>@thegoatchn</span></a>
+          <a href="#" class="social-link yt" aria-label="YouTube"><i class="fab fa-youtube"></i><span>The GOAT Restaurant</span></a>
+        </div>
+      </div>
+      <div class="newsletter-wrap reveal-right">
+        <h3>Get Exclusive Access</h3>
+        <p>New dish announcements, exclusive offers, and event invites—delivered to your inbox first.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 31: TRUST & SAFETY                         -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="section-trust">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-eyebrow">Certified</span>
+      <h2>Your Safety &amp; Security Matters</h2>
+    </div>
+    <div class="trust-badges">
+      <div class="trust-badge reveal-up" style="--delay:0s"><i class="fas fa-lock"></i><span>SSL Secure Payment</span></div>
+      <div class="trust-badge reveal-up" style="--delay:0.1s"><i class="fas fa-shield-alt"></i><span>Payment Gateway Certified</span></div>
+      <div class="trust-badge reveal-up" style="--delay:0.2s"><i class="fas fa-utensils"></i><span>FSSAI Certified</span></div>
+      <div class="trust-badge reveal-up" style="--delay:0.3s"><i class="fas fa-certificate"></i><span>ISO 22000:2018</span></div>
+      <div class="trust-badge reveal-up" style="--delay:0.4s"><i class="fas fa-star"></i><span>Michelin Quality Verified</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SECTION 32: FOOTER                                 -->
+<!-- ═══════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">THE <span>GOAT</span></div>
+          <p>Chennai's most prestigious fine dining destination—where Michelin-star artistry meets cinematic ambiance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#menu">Full Menu</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#chef-specials">Chef Specials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> +91 44 1234 5678</li>
+            <li><i class="fas fa-envelope"></i> reservations@thegoatrestaurant.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Road, Anna Nagar, Chennai 600040</li>
+            <li><i class="fas fa-clock"></i> Daily 11 AM – 11 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 The GOAT Restaurant, Chennai. All rights reserved. Crafted with passion for legends.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Cart Notification Toast -->
+<div class="cart-toast" id="cartToast">
+  <i class="fas fa-check-circle"></i> Added to your order!
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
