@@ -1,0 +1,751 @@
+/* ═══════════════════════════════════════════════════════════
+   THE GOAT RESTAURANT — MOBILE.CSS
+   Complete mobile optimization for all breakpoints
+   Breakpoints:
+     1024px — tablet landscape
+      768px — tablet portrait
+      600px — large phone
+      480px — phone
+      380px — small phone
+   ═══════════════════════════════════════════════════════════ */
+
+/* ──────────────────────────────────────────────────────────
+   GLOBAL TOKENS (mobile overrides)
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --nav-h: 64px;
+    --radius: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+  }
+
+  .container { padding: 0 16px; }
+
+  /* Section padding */
+  section { scroll-margin-top: var(--nav-h); }
+
+  .section-intro,
+  .section-why,
+  .section-featured-menu,
+  .section-menu,
+  .section-chef-specials,
+  .section-ingredients,
+  .section-chef,
+  .section-ambience,
+  .section-gallery,
+  .section-reviews,
+  .section-offers,
+  .section-loyalty,
+  .section-events,
+  .section-birthday,
+  .section-corporate,
+  .section-reservation,
+  .section-contact,
+  .section-faq,
+  .section-social,
+  .section-trust,
+  .section-team,
+  .section-videos,
+  .section-signature,
+  .section-today,
+  .section-chef-specials,
+  .section-ratings,
+  .section-awards { padding: 64px 0; }
+
+  /* Section headers */
+  .section-header { margin-bottom: 36px; }
+  .section-header h2 { font-size: 1.75rem; line-height: 1.2; }
+  .section-eyebrow { font-size: 0.68rem; letter-spacing: 0.18em; }
+  .section-desc { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 14px; }
+
+  .section-intro,
+  .section-why,
+  .section-featured-menu,
+  .section-menu,
+  .section-chef-specials,
+  .section-ingredients,
+  .section-chef,
+  .section-ambience,
+  .section-gallery,
+  .section-reviews,
+  .section-offers,
+  .section-loyalty,
+  .section-events,
+  .section-birthday,
+  .section-corporate,
+  .section-reservation,
+  .section-contact,
+  .section-faq,
+  .section-social,
+  .section-trust,
+  .section-team,
+  .section-videos,
+  .section-signature,
+  .section-today,
+  .section-ratings,
+  .section-awards { padding: 48px 0; }
+
+  .section-header { margin-bottom: 28px; }
+  .section-header h2 { font-size: 1.5rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   LOADER
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .loader-logo { font-size: 4rem; }
+  .loader-tagline { font-size: 0.85rem; padding: 0 24px; text-align: center; }
+  .loader-bar-wrap { width: 160px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   NAVIGATION
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  #navbar { height: var(--nav-h, 64px); }
+  #navbar.scrolled { height: 58px; }
+
+  .nav-container { padding: 0 16px; gap: 0; }
+  .nav-links, .nav-ctas { display: none; }
+  .hamburger { display: flex; margin-left: auto; }
+
+  .logo-goat { font-size: 1.35rem; }
+  .logo-the { font-size: 0.55rem; }
+
+  .mobile-menu { top: 64px; padding: 16px 20px 32px; }
+  .mobile-menu a { font-size: 0.95rem; padding: 14px 0; }
+  .mobile-menu .btn-book {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────
+   HERO
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #hero { min-height: 100svh; }
+
+  .hero-headline { font-size: clamp(2rem, 9vw, 3rem); line-height: 1.1; }
+  .hero-sub { font-size: 0.95rem; padding: 0 8px; margin-bottom: 28px; }
+  .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.18em; }
+
+  .hero-ctas { flex-direction: column; align-items: center; gap: 12px; }
+  .hero-ctas .btn-primary,
+  .hero-ctas .btn-ghost { width: 240px; justify-content: center; }
+
+  .hero-rating-badge {
+    top: auto;
+    bottom: 90px;
+    right: 16px;
+    padding: 10px 14px;
+  }
+  .rating-stars { font-size: 0.85rem; }
+  .rating-score { font-size: 1.2rem; }
+  .rating-count { font-size: 0.65rem; }
+
+  .hero-scroll-hint { display: none; }
+}
+
+@media (max-width: 480px) {
+  .hero-headline { font-size: clamp(1.8rem, 10vw, 2.4rem); }
+  .hero-ctas .btn-primary,
+  .hero-ctas .btn-ghost { width: 100%; max-width: 280px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 4: INTRODUCTION
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 36px; }
+  .intro-image { aspect-ratio: 16/10; min-height: 260px; order: -1; }
+  .intro-text h2 { font-size: 1.75rem; }
+}
+
+@media (max-width: 480px) {
+  .intro-values { gap: 8px; }
+  .value-chip { font-size: 0.75rem; padding: 7px 14px; }
+  .intro-image { aspect-ratio: 4/3; min-height: 220px; }
+  .intro-image-badge { padding: 10px 14px; }
+  .badge-num { font-size: 1.5rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 5: WHY CHOOSE US
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 600px) {
+  .why-grid { grid-template-columns: 1fr; gap: 14px; }
+  .why-card { padding: 24px 20px; }
+  .why-icon { font-size: 1.6rem; margin-bottom: 14px; }
+  .why-card h3 { font-size: 1rem; }
+  .why-card p { font-size: 0.855rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 6: AWARDS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .section-awards { padding: 56px 0; }
+  .award-badge { min-width: 180px; padding: 18px 20px; }
+  .award-name { font-size: 0.8rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 7: RATINGS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .ratings-hero { flex-direction: column; gap: 36px; }
+  .ratings-score-large { font-size: 4rem; }
+  .ratings-stars-large { font-size: 2.2rem; letter-spacing: 4px; }
+  .ratings-platforms { flex-direction: column; width: 100%; }
+  .platform-badge { width: 100%; justify-content: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .ratings-score-large { font-size: 3.2rem; }
+  .platform-badge { padding: 16px 20px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 8: SIGNATURE DISHES
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .dishes-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+
+@media (max-width: 600px) {
+  .dishes-grid { grid-template-columns: 1fr; gap: 16px; }
+  .dish-img-wrap { height: 220px; }
+  .dish-info { padding: 18px; }
+  .dish-info h3 { font-size: 1.05rem; }
+  .dish-info p { font-size: 0.82rem; margin-bottom: 14px; }
+  .dish-price { font-size: 1.2rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 9: FEATURED MENU CATEGORIES
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .featured-cats { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .feat-cat { aspect-ratio: 3/2; min-height: 180px; }
+}
+
+@media (max-width: 480px) {
+  .featured-cats { grid-template-columns: 1fr; gap: 12px; }
+  .feat-cat { aspect-ratio: 16/9; min-height: 160px; }
+  .feat-cat-text h3 { font-size: 1rem; }
+  .feat-cat-text p { font-size: 0.75rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 10: FULL MENU (TABBED)
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .menu-tabs {
+    gap: 6px;
+    padding-bottom: 8px;
+    margin-bottom: 28px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-btn {
+    font-size: 0.75rem;
+    padding: 8px 14px;
+    white-space: nowrap;
+  }
+
+  .menu-items-grid { grid-template-columns: 1fr; gap: 14px; }
+
+  .menu-item { gap: 12px; }
+  .menu-item img,
+  .menu-item > img,
+  .menu-item img:first-child {
+    width: 90px !important;
+    min-width: 90px !important;
+    height: 90px !important;
+  }
+  .menu-item-info h4 { font-size: 0.875rem; }
+  .menu-item-info p { font-size: 0.77rem; }
+  .price { font-size: 0.95rem; }
+  .btn-add-sm { font-size: 0.7rem; padding: 6px 12px; }
+
+  .package-item { flex-direction: column; }
+  .package-item > img,
+  .package-item img { width: 100% !important; height: 160px !important; }
+}
+
+@media (max-width: 480px) {
+  .menu-items-grid { gap: 10px; }
+  .menu-item img,
+  .menu-item > img,
+  .menu-item img:first-child {
+    width: 80px !important;
+    min-width: 80px !important;
+    height: 80px !important;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 11: CHEF SPECIALS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .specials-grid { grid-template-columns: 1fr; gap: 20px; }
+  .special-card { display: grid; grid-template-columns: 1fr 1fr; }
+  .special-img { min-height: 200px; aspect-ratio: auto; }
+  .special-img img { height: 100%; object-fit: cover; }
+  .special-info { padding: 20px; }
+  .special-info h3 { font-size: 1.05rem; }
+  .special-info p { font-size: 0.82rem; }
+  .chef-quote { font-size: 0.82rem; padding: 8px 12px; }
+  .special-footer .price { font-size: 1.2rem; }
+}
+
+@media (max-width: 600px) {
+  .special-card { grid-template-columns: 1fr; }
+  .special-img { min-height: 220px; aspect-ratio: 16/9; }
+  .special-info { padding: 18px 16px; }
+  .special-footer { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .special-footer .btn-primary { width: 100%; text-align: center; justify-content: center; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 12: TODAY'S SPECIAL
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .today-inner { grid-template-columns: 1fr; }
+  .today-img {
+    aspect-ratio: 16/9;
+    min-height: 220px;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+  .today-info { padding: 28px 24px 32px; }
+  .today-info h2 { font-size: 1.8rem; }
+}
+
+@media (max-width: 480px) {
+  .today-info { padding: 22px 18px 28px; }
+  .today-info h2 { font-size: 1.5rem; }
+  .today-price { font-size: 1.8rem; }
+  .today-original { font-size: 1.1rem; }
+  .today-timer { flex-wrap: wrap; gap: 8px; }
+  .countdown { gap: 3px; }
+  .cd-unit span { font-size: 1.4rem; min-width: 42px; padding: 5px 8px; }
+  .today-discount { width: 58px; height: 58px; font-size: 0.9rem; }
+  .btn-primary.large { padding: 16px 32px; font-size: 0.875rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 13: INGREDIENTS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .ingredients-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+}
+
+@media (max-width: 600px) {
+  .ingredients-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .ingr-card h3 { font-size: 0.9rem; }
+  .ingr-card p { font-size: 0.75rem; padding: 0 12px 16px; }
+  .ingr-icon { font-size: 1.3rem; margin: 14px 0 8px; }
+  .ingr-img { min-height: 140px; }
+}
+
+@media (max-width: 380px) {
+  .ingredients-grid { grid-template-columns: 1fr; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 14: MEET THE CHEF
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .chef-grid { grid-template-columns: 1fr; gap: 36px; }
+  .chef-photo {
+    aspect-ratio: 4/3;
+    min-height: 280px;
+    max-height: 380px;
+  }
+  .chef-bio h2 { font-size: 1.8rem; }
+  .chef-big-quote { font-size: 1.05rem; }
+}
+
+@media (max-width: 480px) {
+  .chef-photo { aspect-ratio: 1; min-height: 260px; }
+  .chef-bio h2 { font-size: 1.5rem; }
+  .chef-big-quote { font-size: 0.95rem; padding: 12px 16px; }
+  .chef-achievements { gap: 8px; }
+  .ach-badge { font-size: 0.75rem; padding: 7px 12px; }
+  .chef-title { font-size: 0.9rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 15: TEAM
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 480px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .team-photo { min-height: 160px; }
+  .team-card h3 { font-size: 0.9rem; margin: 12px 0 4px; }
+  .team-card p { font-size: 0.75rem; }
+  .team-card { padding-bottom: 16px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 16: AMBIENCE
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .section-ambience { padding-bottom: 0; }
+  .ambience-mosaic {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 16px 16px;
+    gap: 10px;
+  }
+  .amb-item.large { grid-column: span 2; }
+  .amb-item.large img { height: 280px; }
+  .amb-item img { height: 180px; }
+  .amb-caption { opacity: 1; transform: none; font-size: 0.75rem; padding: 12px 14px 10px; }
+}
+
+@media (max-width: 600px) {
+  .ambience-mosaic {
+    grid-template-columns: 1fr;
+    padding: 0 14px 14px;
+  }
+  .amb-item.large { grid-column: span 1; }
+  .amb-item.large img { height: 220px; }
+  .amb-item img { height: 200px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 17: GALLERY
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .gallery-filters { gap: 8px; }
+  .gfilter { font-size: 0.78rem; padding: 7px 16px; }
+  .gallery-masonry { columns: 2; column-gap: 10px; }
+  .gal-item { margin-bottom: 10px; }
+}
+
+@media (max-width: 480px) {
+  .gallery-masonry { columns: 1; }
+  .gal-item img { min-height: 200px; }
+  .gal-overlay { opacity: 1; } /* always show caption on mobile */
+}
+
+/* Gallery modal */
+@media (max-width: 600px) {
+  .modal-inner img { max-width: 96vw; max-height: 70vh; }
+  #modalCaption { font-size: 0.78rem; padding: 0 16px; }
+  .modal-close { top: -40px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 18: VIDEOS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .videos-grid { grid-template-columns: 1fr; gap: 16px; }
+  .video-thumb { min-height: 220px; aspect-ratio: 16/9; }
+  .play-btn { width: 56px; height: 56px; font-size: 1.1rem; }
+  .video-info h4 { font-size: 1rem; }
+  .video-info span { font-size: 0.75rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 19: REVIEWS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 600px) {
+  .reviews-grid { grid-template-columns: 1fr; gap: 14px; }
+  .review-card { padding: 20px; }
+  .review-card p { font-size: 0.82rem; }
+  .review-header strong { font-size: 0.85rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTIONS 20-21: OFFERS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .offers-grid { grid-template-columns: 1fr; gap: 20px; max-width: 520px; margin: 0 auto; }
+}
+
+@media (max-width: 480px) {
+  .offer-card { padding: 32px 20px 28px; }
+  .offer-icon { font-size: 2rem; }
+  .offer-card h3 { font-size: 1.15rem; }
+  .offer-card p { font-size: 0.83rem; }
+  .offer-price .final { font-size: 1.35rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 22: LOYALTY
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .loyalty-tiers {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 440px;
+    margin: 0 auto 40px;
+  }
+  .featured-tier { transform: scale(1); }
+  .featured-tier:hover { transform: translateY(-4px); }
+  .tier-card { padding: 32px 24px; }
+  .tier-crown { font-size: 2rem; }
+  .tier-card h3 { font-size: 1.35rem; }
+}
+
+@media (max-width: 480px) {
+  .loyalty-tiers { max-width: 100%; }
+  .tier-card { padding: 28px 18px; }
+  .tier-benefits li { font-size: 0.82rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 23: EVENTS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .events-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .event-card { min-height: 300px !important; }
+  .event-info h3 { font-size: 1.05rem; }
+  .event-info p { font-size: 0.78rem; }
+}
+
+@media (max-width: 500px) {
+  .events-grid { grid-template-columns: 1fr; gap: 14px; }
+  .event-card { min-height: 260px !important; aspect-ratio: 16/9; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   BIRTHDAY PACKAGES
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .bday-grid { grid-template-columns: 1fr; gap: 20px; max-width: 440px; margin: 0 auto; }
+  .bday-card { padding: 32px 24px; }
+}
+
+@media (max-width: 480px) {
+  .bday-grid { max-width: 100%; }
+  .bday-card { padding: 28px 18px; }
+  .bday-price { font-size: 1.8rem; }
+  .bday-icon { font-size: 2rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   CORPORATE + CATERING
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .corp-grid { grid-template-columns: 1fr; gap: 40px; }
+  .corp-card h2 { font-size: 1.7rem; }
+}
+
+@media (max-width: 480px) {
+  .corp-card h2 { font-size: 1.4rem; }
+  .corp-card p { font-size: 0.875rem; }
+  .corp-features li { font-size: 0.83rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 27: RESERVATIONS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .res-inner { grid-template-columns: 1fr; gap: 36px; }
+  .res-text h2 { font-size: 2rem; }
+  .res-text p { font-size: 0.9rem; }
+  .res-features { gap: 10px; }
+  .res-feat { font-size: 0.85rem; }
+
+  .booking-form { padding: 28px 22px; }
+  .booking-form h3 { font-size: 1.3rem; margin-bottom: 22px; }
+  .form-row { grid-template-columns: 1fr; gap: 14px; margin-bottom: 14px; }
+}
+
+@media (max-width: 480px) {
+  .booking-form { padding: 22px 16px; border-radius: var(--radius-lg); }
+  .form-group label { font-size: 0.7rem; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea { font-size: 0.875rem; padding: 11px 14px; }
+  .phone-prefix { font-size: 0.875rem; left: 12px; }
+  .phone-wrap input { padding-left: 42px; }
+  .form-btns .btn-primary.large { padding: 16px 24px; font-size: 0.875rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 28: CONTACT + MAP
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 28px; }
+  .contact-map iframe { height: 320px !important; }
+}
+
+@media (max-width: 480px) {
+  .contact-card { padding: 16px 18px; gap: 12px; }
+  .cc-icon { width: 38px; height: 38px; font-size: 0.875rem; }
+  .contact-card h4 { font-size: 0.68rem; }
+  .contact-card p, .contact-card a { font-size: 0.83rem; }
+  .hours-table { font-size: 0.78rem; }
+  .hours-table td:first-child { padding-right: 12px; }
+  .contact-map iframe { height: 260px !important; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 29: FAQ
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .faq-list { gap: 10px; }
+  .faq-q { font-size: 0.875rem; padding: 17px 18px; }
+  .faq-arrow { font-size: 1.2rem; }
+  .faq-a p { font-size: 0.85rem; padding: 0 18px 18px; line-height: 1.7; }
+}
+
+@media (max-width: 480px) {
+  .faq-q { font-size: 0.83rem; padding: 15px 16px; gap: 10px; }
+  .faq-a p { font-size: 0.82rem; padding: 0 16px 16px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 30: SOCIAL + NEWSLETTER
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .social-inner { grid-template-columns: 1fr; gap: 40px; }
+  .social-links-wrap h2 { font-size: 1.8rem; }
+}
+
+@media (max-width: 480px) {
+  .social-links-wrap h2 { font-size: 1.5rem; margin-bottom: 20px; }
+  .social-link { font-size: 0.83rem; padding: 12px 16px; }
+  .social-link i { font-size: 1.05rem; }
+  .newsletter-wrap h3 { font-size: 1.35rem; }
+  .newsletter-form { flex-direction: column; gap: 10px; }
+  .newsletter-form input { border-radius: 50px; }
+  .newsletter-form .btn-primary { width: 100%; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 31: TRUST BADGES
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .trust-badges { gap: 12px; }
+  .trust-badge { min-width: 120px; padding: 18px 20px; gap: 8px; }
+  .trust-badge i { font-size: 1.5rem; }
+  .trust-badge span { font-size: 0.72rem; }
+}
+
+@media (max-width: 480px) {
+  .trust-badges { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .trust-badge { min-width: unset; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SECTION 32: FOOTER
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .footer-top { padding: 56px 0 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .brand-col { grid-column: span 2; }
+}
+
+@media (max-width: 600px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+  .brand-col { grid-column: span 1; }
+  .footer-logo { font-size: 1.5rem; margin-bottom: 10px; }
+  .brand-col p { font-size: 0.82rem; }
+  .footer-col h4 { font-size: 0.65rem; letter-spacing: 0.14em; }
+  .footer-col ul a,
+  .footer-col ul li { font-size: 0.82rem; }
+  .footer-social { gap: 10px; }
+  .footer-social a { width: 34px; height: 34px; font-size: 0.8rem; }
+  .footer-bottom { padding: 16px 0; }
+  .footer-bottom p { font-size: 0.72rem; }
+}
+
+@media (max-width: 380px) {
+  .footer-contact li { flex-direction: column; gap: 2px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   GLOBAL UI ELEMENTS (mobile)
+   ────────────────────────────────────────────────────────── */
+
+/* Buttons */
+@media (max-width: 480px) {
+  .btn-primary { padding: 13px 26px; font-size: 0.82rem; }
+  .btn-primary.large { padding: 15px 32px; font-size: 0.875rem; }
+  .btn-ghost { padding: 12px 22px; font-size: 0.82rem; }
+  .btn-add { padding: 9px 16px; font-size: 0.72rem; }
+}
+
+/* Back to top */
+@media (max-width: 480px) {
+  .back-to-top { bottom: 20px; right: 16px; width: 40px; height: 40px; }
+  .cart-toast { bottom: 72px; right: 16px; font-size: 0.8rem; padding: 12px 18px; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   TOUCH IMPROVEMENTS
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  /* Larger tap targets */
+  .btn-add-sm { min-height: 36px; display: inline-flex; align-items: center; }
+  .tab-btn { min-height: 38px; }
+  .faq-q { min-height: 52px; }
+  .gfilter { min-height: 36px; }
+
+  /* Remove hover-only interactions on touch */
+  .amb-caption { opacity: 1 !important; transform: none !important; }
+  .gal-overlay { opacity: 0; } /* keep hidden behind tap */
+
+  /* Prevent text size inflation on iOS */
+  html { -webkit-text-size-adjust: 100%; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SAFE AREA (iPhone notch / home bar)
+   ────────────────────────────────────────────────────────── */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .footer-bottom {
+    padding-bottom: calc(24px + env(safe-area-inset-bottom));
+  }
+  .mobile-menu {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
+  }
+}
+
+/* ──────────────────────────────────────────────────────────
+   LANDSCAPE PHONE FIXES
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 812px) and (orientation: landscape) {
+  #hero { min-height: 100vw; }
+  .hero-headline { font-size: 2rem; }
+  .hero-ctas { flex-direction: row; }
+  .loader-logo { font-size: 3.5rem; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   SMOOTH SCROLLING ON MOBILE
+   ────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .menu-tabs,
+  .awards-track-wrap {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+  }
+  .tab-btn,
+  .award-badge {
+    scroll-snap-align: start;
+  }
+}
